@@ -3,7 +3,7 @@ phases:
   install:
     commands:
         #-Package
-        - aws cloudformation package --template-file sam-app/template.yaml --s3-bucket cicd-deployment-feature-chdemo-467519156370 --output-template-file OutputEmpSamTemplate.yml
+        - aws cloudformation package --template-file template.yaml --s3-bucket cicd-deployment-feature-chdemo-467519156370 --output-template-file OutputEmpSamTemplate.yml
 artifacts:
   type: zip
   files:  
